@@ -1,0 +1,9 @@
+bower_components/
+node_modules/
+.sass-cache/
+psd/
+
+*.psd
+*.log
+.DS_Store
+.desktop.ini

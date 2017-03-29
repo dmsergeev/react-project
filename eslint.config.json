@@ -1,0 +1,32 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+    "globals": {
+    "document": false,
+    "navigator": false,
+    "window": false,
+    "jQuery" : true,
+    "$" : true
+  },
+
+  "rules": {
+    "quotes": "off",
+    "no-trailing-spaces": "off",
+    "no-global-assign": "error",
+    "eol-last": "error",
+    "no-unused-vars": "off",
+    "no-underscore-dangle": "off",
+    "no-alert": "off",
+    "no-lone-blocks": "off",
+    "camelcase" : "warn"
+  }
+}
