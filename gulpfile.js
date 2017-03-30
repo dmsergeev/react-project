@@ -15,6 +15,7 @@ var config = {
     paths: {
         html: './src/*.html',
         js: './src/**/*.js',
+        img: './src/img/*',
         css: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
@@ -45,6 +46,13 @@ gulp.task('html', function () {
         .pipe(connect.reload());
 });
 
+gulp.task('img', function () {
+    gulp.src(config.paths.img)
+        .pipe(gulp.dest(config.paths.dist + '/img/'))
+        .pipe(connect.reload());
+});
+
+
 gulp.task('js', function(){
     browserify(config.paths.mainJs)
         .transform(reactify)
@@ -74,4 +82,4 @@ gulp.task('watch', function(){
     gulp.watch(config.paths.css, ['css']);
 });
 
-gulp.task('default', ['html', 'js', 'lint', 'css', 'open', 'watch']);
+gulp.task('default', ['html', 'js', 'img', 'lint', 'css', 'open', 'watch']);
