@@ -14,7 +14,7 @@ var config = {
     devBaseUrl: 'http://localhost',
     paths: {
         html: './src/*.html',
-        js: './src/**/*.js',
+        js: './src/**/*.js*',
         img: './src/img/*',
         css: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
