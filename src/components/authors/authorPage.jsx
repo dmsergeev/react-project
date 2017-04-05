@@ -23,7 +23,7 @@ var AuthorPage = React.createClass({
         return (
             <div>
                 <h1>Authors</h1>
-                <Link to="manageAuthor" className="btn btn-primary">Manage Authors</Link>
+                <Link to="addAuthor" className="btn btn-primary">Manage Authors</Link>
                 {<AuthorList authors={this.state.authors} />}
             </div>
         )

@@ -13,7 +13,7 @@ var TextInput = React.createClass({
     },
     render: function () {
         var wrapperClass = 'form-group';
-        if (this.props.error && this.prop.error.length > 0) {
+        if (this.props.error && this.props.error.length > 0) {
             wrapperClass += " " + 'has-error';
         }
         return (

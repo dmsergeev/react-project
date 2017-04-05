@@ -19,7 +19,7 @@ var config = {
         css: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
-            'node_modules/font-awesome/css/font-awesome.min.css'
+            'node_modules/toastr/build/toastr.min.css'
         ],
         mainJs: './src/main.jsx',
         dist: './dist'
