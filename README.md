@@ -1,4 +1,1 @@
-hi
-
-
-hello
+Basic app using React/Flux/ES5
